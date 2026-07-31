@@ -1,0 +1,33 @@
+.diagnostic-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 0 28px 28px;
+}
+
+.diagnostic-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #dce6e8;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.diagnostic-gallery img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #102b42;
+}
+
+.diagnostic-gallery figcaption {
+  padding: 12px 14px;
+  color: #0A2E4C;
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .diagnostic-gallery { grid-template-columns: 1fr; }
+  .diagnostic-gallery img { height: auto; max-height: 420px; }
+}
